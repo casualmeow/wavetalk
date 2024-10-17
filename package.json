@@ -1,0 +1,33 @@
+{
+    "private": true,
+    "workspaces": [
+      "apps/*",
+      "apps/web",
+      "src-tauri",
+      "shared"
+    ],
+    "scripts": {
+      "build:web": "npm run build --workspace=web",
+      "build:mobile": "npm run build --workspace=mobile",
+      "build:desktop": "npm run build --workspace=desktop",
+      "start:web": "npm start --workspace=web",
+      "start:mobile": "npm start --workspace=mobile",
+      "start:desktop": "npm start --workspace=desktop"
+    },
+    "dependencies": {
+        "react": "^18",
+        "react-dom": "^18",
+        "next": "14.2.15"
+      },
+      "devDependencies": {
+        "typescript": "^5",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.1",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.15"
+      }
+  }
+  
