@@ -7,12 +7,15 @@
       "shared"
     ],
     "scripts": {
-      "build:web": "npm run build --workspace=web",
+      "build:web": "npm run build --workspace=apps/web",
       "build:mobile": "npm run build --workspace=mobile",
       "build:desktop": "npm run build --workspace=desktop",
-      "start:web": "npm start --workspace=web",
+      "start:web": "npm start --workspace=apps/web",
       "start:mobile": "npm start --workspace=mobile",
-      "start:desktop": "npm start --workspace=desktop"
+      "start:desktop": "npm start --workspace=desktop",
+      "start:backend": "cargo run --manifest-path=src-tauri/Cargo.toml",
+      "start:test": "cargo tauri dev",
+      "start:all": "npm run start:web & npm run start:backend"
     },
     "dependencies": {
         "react": "^18",
