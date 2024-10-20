@@ -15,7 +15,7 @@
       "start:mobile": "npm start --workspace=mobile",
       "start:desktop": "npm start --workspace=desktop",
       "start:backend": "cargo run --manifest-path=src-tauri/Cargo.toml",
-      "start:test": "cargo tauri dev",
+      "tauri:dev": "cargo tauri dev",
       "start:all": "npm run start:web & npm run start:backend"
     },
     "dependencies": {
